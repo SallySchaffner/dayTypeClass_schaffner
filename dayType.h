@@ -6,7 +6,7 @@ using namespace std;
 class dayType
 {
 public:
-	
+	static string dayOfWeek[7];
 	
 	//Precondition - a valid day is supplied (see dayOfWeek)
 	//Postcondition - stores day if valid, otherwise stores default
@@ -33,6 +33,6 @@ public:
 
 private:
 	string day;
-	static string dayOfWeek[7];
+
 };
 

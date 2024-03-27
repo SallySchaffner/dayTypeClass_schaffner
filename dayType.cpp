@@ -1,6 +1,7 @@
+#include <iostream>
 #include "dayType.h"
 
-string dayOfWeek[] = { "Sunday", "Monday", "Tuesday", "Wednesday", 
+string dayType::dayOfWeek[] = { "Sunday", "Monday", "Tuesday", "Wednesday", 
                        "Thursday", "Friday", "Saturday" };
 
 void dayType::setDay(string aDay)
@@ -15,6 +16,11 @@ void dayType::setDay(string aDay)
         }        
     }
     day = dayOfWeek[index];
+}
+
+void dayType::print() const
+{
+    cout << day << endl;
 }
 
 dayType::dayType(string start)
